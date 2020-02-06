@@ -1,0 +1,5 @@
+SELECT CONCAT(SUBSTRING(CPF, 1, 3),'.',
+SUBSTRING(CPF, 4, 3),'.',
+SUBSTRING(CPF, 7, 3),'-',
+SUBSTRING(CPF, 10, 2))
+FROM natural_person
